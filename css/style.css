@@ -134,7 +134,7 @@ header{
 /*-------------------------Hero Img------------------------*/
 #heroImg{
 	width: 100%;
-	height: 56em;
+	height: 54em;
     background-image: url("../img/all.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -152,7 +152,7 @@ header{
     width: 100%;
 	padding: 2em;
 	position: absolute;
-	top: 40%;
+	top: 30%;
 	left: 0;
 	text-align: center;
 	-webkit-animation-duration: 2s;
