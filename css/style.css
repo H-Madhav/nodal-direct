@@ -135,7 +135,7 @@ header{
 /*-------------------------Hero Img------------------------*/
 #heroImg{
 	width: 100%;
-	height: 54em;
+	height: 56em;
     background-image: url("../img/all.jpg");
     background-attachment: fixed;
     background-position: center;
