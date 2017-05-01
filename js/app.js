@@ -1,4 +1,3 @@
-;new WOW().init();
 
 $(function(){
     var animation1 = "animated bounce";
