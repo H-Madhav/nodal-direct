@@ -68,11 +68,10 @@ header{
 .navbarLink a{
     list-style: none;
     display: inline-block;
-    font-size: 1.8em;
-    padding:0em 1em;
+    font-size: 1.6em;
+    padding:0em 0.5em;
     color: #fff;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
     text-decoration: none;
     transition: color 1s;
 }
@@ -97,25 +96,24 @@ header{
     header{
     	height: auto;
     	line-height: 3em;
-	padding: 1em 0em;
+    	padding: 1em 0em;
     }
     .navbarLink{
     	width: 100%;
-    	text-align: left;
+    	text-align: center;
     }
     .navbarHeader{
     	width: 100%;
     	text-align: center;
     }
    .navbarFooter{
-	    width: 100%;
-	    text-align: left;
-	    padding-left: 1em;
+	   	width: 100%;
+	    text-align: center;
    } 
 
 }
 .navbarFooter a{
-   font-size: 1.8em;
+   font-size: 1.6em;
    color: #fff;
    text-decoration: none;
    text-transform: uppercase;
@@ -129,7 +127,7 @@ header{
     position: fixed;
     top:0; left:0;
     width: 100%; 
-    background: rgba(0, 0, 0,0.76);
+    background: rgba(0, 0, 0, 0.75);
 }
 
 /*-------------------------Header End----------------------*/
