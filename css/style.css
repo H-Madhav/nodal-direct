@@ -32,10 +32,10 @@ h1, h2, h3, h4, h5, h6, p{
 	padding: 0;
 }
 h1{
-	font-size: 3.6em;
+	font-size: 3em;
 }
 h2{
-	font-size: 3em;
+	font-size: 2.4em;
 }
 /*--------------------Header Start------------------*/
 header{
@@ -97,6 +97,7 @@ header{
     header{
     	height: auto;
     	line-height: 3em;
+	padding: 1em 0em;
     }
     .navbarLink{
     	width: 100%;
