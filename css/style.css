@@ -5,15 +5,19 @@
 *{
 	box-sizing: border-box;
 }
-html, body{
-	font-size: 100%;
-	margin: 0;
-	padding: 0;
+html, 
+body{
+	width: 100%;
+	height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #4b4b4b;
 }
 
 body{
 	font-size: 62.5%;
-	font-family: "Times New Roman", Times, serif;
+	font-family: 'Open Sans', sans-serif; 
 }
 
 nav{
@@ -22,20 +26,28 @@ nav{
 
 p, li, a{
 	font-size: 1.6em;
-	color: #535353;
-	font-weight: normal;
-	font-size: 1.6em;
-}
-h1, h2, h3, h4, h5, h6, p{
-	font-weight: normal;
 	margin: 0;
 	padding: 0;
+	font-weight: 400;
+	color: #4b4b4b;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+	line-height: 1.4;
 }
 h1{
-	font-size: 3em;
+	font-size: 3.4em;
+	font-weight: 300;
 }
 h2{
 	font-size: 2.4em;
+}
+h3{
+	font-size: 2em;
+}
+h4{
+	font-size: 1.6em;
 }
 /*--------------------Header Start------------------*/
 header{
@@ -68,8 +80,8 @@ header{
 .navbarLink a{
     list-style: none;
     display: inline-block;
-    font-size: 1.6em;
     padding:0em 0.5em;
+    font-weight: 400;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
@@ -85,6 +97,7 @@ header{
 .navbarHeader a{
 	text-decoration: none;
 	font-size: 3em;
+	font-weight: 300;
 	color: #fff;
 	letter-spacing: 0.1em;
 }
@@ -118,10 +131,14 @@ header{
    text-decoration: none;
    text-transform: uppercase;
    background: #DCB239;
-   padding: 0.2em 1em;
+   padding: 0.5em 1em;
    color: #fff;
-   border-radius: 3px;
    text-decoration: none;
+   transition: all 0.4s;
+}
+.navbarFooter a:hover{
+   background: none;
+   border: solid 1px #DCB239;
 }
 .fixed {
     position: fixed;
@@ -135,7 +152,7 @@ header{
 #heroImg{
 	width: 100%;
 	height: 54em;
-    background-image: url("../img/all.jpg");
+    background-image: url("../img/pexels.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -145,7 +162,7 @@ header{
 .imgOverlay{
 	width: 100%;
 	height: 100%;
-	background: rgba(74, 189, 172, 1);
+	background: rgba(74, 123, 180, 0.2);
 	position: relative;
 }
 .mainHeading{
@@ -163,6 +180,7 @@ header{
 	font-size: 1.2em;
 	letter-spacing: 0.3em;
 	padding: 1em;
+	font-weight: 400;
 }
 .mainHeading h1{
 	color: #DF744A;
@@ -202,14 +220,12 @@ header{
 }
 
 .vision h2{
-	color: #535353;
-	font-weight: normal;
+	font-weight: 300;
 	text-align: center;
-	font-size: 2.4em;
 }
 .seprator{
-	width: 20%;
-	border: solid 1px #ddd;
+	width: 10%;
+	border: solid 1px rgb(223, 116, 74);
 	margin: 2em auto;
 }
 /*--------------------Vision End---------*/
@@ -227,19 +243,24 @@ header{
 	text-align: center;
 	margin: 2em auto;
 }
-.coreFeatures h2{
-	font-size: 2.8em;
-	color: #535353;
-	font-weight: normal;
+.coreFeature h2{
+	font-weight: 300;
 	padding-bottom: 0.5em;
+	transition: color 0.4s;
 }
+.fontIcon{
+	color: rgb(223, 116, 74);
+	font-size: 4em;
+	font-weight: 300;
+	-webkit-animation-duration: 2s;
+}
+
 /*----------------coreFeatures End---------*/
 /*-------------------features-------------*/
 
 .featuresWrapper{
 	width: 100%;
-	background: #fff;
-	border-bottom: solid 1px #ddd;
+	background: rgb(74, 123, 180);
 }
 .features {
 	max-width: 120em;
@@ -248,8 +269,9 @@ header{
 }
 .features h2{
 	text-align: center;
-	padding-bottom: 2em;
-	color: #DF744A;
+	padding-bottom: 1em;
+	color: #fff;
+	font-weight: 300;
 }
 .featContainer{
 	width: 100%;
@@ -266,9 +288,17 @@ header{
 	box-shadow: 0px 20px 20px -20px #333;
 	transition: box-shadow 0.4s;
 	-webkit-animation-duration: 2s;
+	transition: background-color 0.4s color 0.4s;
 }
 .card:hover {
 	box-shadow: none;
+	background-color: #fff;
+}
+.card:hover .change {
+	color: rgb(74, 123, 180);
+}
+.card:hover .changeThis{
+	color: #4b4b4b;
 }
 .iconHolder {
 	width: 30%;
@@ -276,21 +306,19 @@ header{
 	text-align: center;
 	-webkit-animation-duration: 2s;
 }
-.iconHolder i{
-    font-size: 4em;
-    color: rgba(74, 189, 172, 1);
-}
 .card h3{
-	font-size: 1.8em;
-	padding: 0.5em 0em 1em 1em; 
-	border-left: solid 2px #DF744A;
+	font-weight: 300;
+	padding-left: 0.5em;
+	padding-bottom: 0.5em;
+	color: #fff;
 }
 .card p{
-    padding: 0.5em 1em;
-    text-align: justify;
+    padding: 0em 0.5em 1em 0.5em;
+    color: #fff;
 }
 .wantMore{
    text-align: center;
+   color: #fff;
 }
 .forMore{
     text-decoration: none;
@@ -320,15 +348,16 @@ header{
 	text-align: center;
 	padding: 0em 1em 1em 1em;
 	color: #DF744A;
+	font-weight: 300;
 }
 .awesomeApp{
 	max-width: 120em;
 	margin: 0 auto;
 }
-.awesomeApp p{
+.awesomeApp h4{
 	text-align: center;
-	line-height: 1.5;
-	color-rendering: #535353;
+	font-size: 1.8em;
+	font-weight: 300;
 	margin-bottom: 1em;
 	padding: 1em;
 }
@@ -340,7 +369,7 @@ header{
 	justify-content: space-between;
 }
 .appFeatures, .device{
-    max-width:55em;
+    max-width:58em;
     margin: 0 auto;
 }
 .device img{
@@ -350,7 +379,8 @@ header{
 
 .define h3{
 	padding-left: 1em;
-	font-size: 2em;
+	font-weight: 300;
+	color: #DF744A;
 }
 .define p{
 	text-align: left;
@@ -476,6 +506,10 @@ textarea:focus {
 
 .functionalityWrapper{
   width: 100%;
+  background: url("../img/nodal.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 1em 4em;
   border-bottom: solid 1px #ddd;
 }
@@ -493,10 +527,13 @@ textarea:focus {
 }
 .funHeading h2{
 	color: #DF744A;
+	font-weight: 300;
 	padding-bottom: 1em;
 }
 .funHeading  p{
-	line-height: 1.5;
+	color: #fff;
+	font-weight: normal;
+	padding-right: 1em;
 }
 .functionCards{
 	width: 50%;
@@ -542,6 +579,7 @@ textarea:focus {
 	text-align: center;
     padding-bottom: 1em;
     color: #DF744A;
+    font-weight: 300;
 }
 .partnerWrapper{
 	min-width: 30em;
@@ -569,6 +607,7 @@ textarea:focus {
 }
 .rUReady h2{
 	padding-bottom: 1em;
+	font-weight: 300;
 }
 
 .rUReady button{
