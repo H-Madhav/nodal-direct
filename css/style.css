@@ -123,6 +123,9 @@ header{
 	   	width: 100%;
 	    text-align: center;
    } 
+   .navbarLink a{
+   	    padding: 1em 0.5em;
+   }
 
 }
 .navbarFooter a{
