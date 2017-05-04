@@ -756,6 +756,7 @@ textarea:focus {
 	color: #fff;
 	padding: 0.6em;
 	font-size: 1.6em;
+	cursor: pointer;
 }
 .footerFoot{
 	display: flex;
