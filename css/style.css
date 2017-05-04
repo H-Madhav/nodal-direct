@@ -155,7 +155,7 @@ header{
 #heroImg{
 	width: 100%;
 	height: 54em;
-   /* background-image: url("../img/pexels.jpeg");*/
+    background-image: url("../img/pexels.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -782,3 +782,223 @@ textarea:focus {
 	padding: 0.5em;
 }
 */
+
+/*---------------Features&pricing-------------------------------*/
+#mainFeatures{
+   width: 100%;
+   position: relative;
+}
+#heroImg2{
+	width: 100%;
+	height: 50em;
+    background-image: url("../img/billboard_empty_office.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.imgOverlay2{
+	width: 100%;
+	height: 100%;
+	background: rgba(74, 123, 180, 0.4);
+	position: relative;
+}
+.mainHeading2{
+    width: 100%;
+	padding: 2em;
+	position: absolute;
+	top: 40%;
+	left: 0;
+	text-align: center;
+	-webkit-animation-duration: 2s;
+}
+.mainHeading2 h3{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	letter-spacing: 0.3em;
+	padding: 1em;
+	font-weight: 400;
+}
+.mainHeading2 h1{
+	color: #DF744A;
+	padding-bottom: 2em;
+	font-weight: 300;
+}
+.featureContainer{
+	width: 100%;
+	padding: 7em 0em;
+	background: #fff;
+}
+.featureContainer h2{
+	text-align: center;
+	margin-bottom: 2em;
+	font-weight: 300;
+}
+.featureContainer .wrapper{
+	max-width: 120em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.featureCard{
+   max-width: 30em;
+   margin: 0 auto;
+   padding: 1em;
+}
+.featureCard h3{
+	padding-bottom: 1em;
+	font-weight: 300;
+}
+.featureCard p{
+	text-align: justify;
+}
+.progress{
+	width: 100%;
+	background: linear-gradient(0deg, #21abc7, #616db3);
+	padding: 7em 0;
+}
+.progress h2{
+	text-align: center;
+	padding: 0em 1em 2em;
+	color: #fff;
+	font-weight: 300;
+}
+.progress .wrapper{
+	max-width: 120em;
+	margin: 0 auto;
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+.progressCard{
+	max-width: 25em;
+	background: #fff;
+	border-radius: 3px;
+	box-shadow: 5px 5px 5px #333;
+	-webkit-transition: box-shadow 0.4s;
+	transition: box-shadow 0.4s;
+	border-top: solid 2px rgb(40, 180, 115);
+	margin: 2em auto;
+}
+.progressCard:hover{
+	box-shadow: none;
+}
+.bumber{
+	width: 5em;
+	height: 5em;
+	line-height: 5em;
+	text-align: center;
+	border-radius: 100%;
+	background: #ddd;
+	border:solid 1px #ddd;
+	margin: -2.5em auto 1em;
+}
+.bumber span{
+    color: rgb(40, 180, 115);
+    font-size: 1.5em;
+}
+
+.progressCard h3{
+   padding: 0em 0.5em 1em;
+   font-weight: 300;
+}
+.progressCard p{
+	padding: 0em 0.5em 1em;
+}
+.pricing {
+	width: 100%;
+	background: #fff;
+	border-bottom: solid 2px #ddd;
+}
+.pricing .wrapper{
+	max-width: 120em;
+	margin: 0 auto;
+	padding: 7.5em 0;
+	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+.pricingCard{
+	max-width: 35em;
+	margin: 2em auto;
+	border: solid 1px #ddd;
+	box-shadow: 0 40px 40px -40px #333;
+}
+.cardHead{
+	width: 100%;
+	background: linear-gradient(0deg, #21abc7, #616db3);
+	text-align: center;
+	padding: 1em;
+	color: #fff;
+}
+.cardHead h2{
+	font-weight: 300;
+	padding: 0.5em 0em;
+}
+.cardHead h3{
+	font-weight: 300;
+	padding: 0.5em 0em;
+}
+.cardHead h3 span{
+	font-weight: 300;
+	font-size: 2em;
+	padding-left: 0.2em;
+}
+
+.cardBody{
+	background: #f4f4eb;
+	padding: 1em;
+}
+
+.cardBody li{
+	list-style: none;
+}
+.cardBody li span{
+	padding-right: 0.5em;
+}
+
+.condition ul li{
+    list-style-type: circle;
+	font-size:1.2em;
+	font-style:italic;
+}
+.cardBody a{
+	display: block;
+	margin: 0 auto;
+	background: rgb(40, 180, 115);
+	color: #fff;
+	padding: 0.5em 1em;
+	text-align: center;
+	font-size: 1.6em;
+	text-decoration: none;
+	position: relative;
+}
+.cardBody a .show{
+      opacity: 0;
+      position: absolute;
+      top: 20%;
+      left: 0%;
+}
+
+.cardBody a:hover .show{
+	left: 65%;
+	opacity: 1;
+	color: #fff;
+}
+
+.cardBody a:hover .hide{
+	opacity: 0;
+}
+
+/*-----------------------End-------------------------*/
