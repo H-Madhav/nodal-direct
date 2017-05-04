@@ -764,20 +764,21 @@ textarea:focus {
 	max-width: 120em;
 	margin: 0 auto;
 }
-.socialMedia{
+/*.socialMedia{
 	width: 35%;
 	text-align: center;
-} 
+} */
 .rights{
-	width: 65%;
-	text-align: right;
+	width: 100%;
+	text-align: center;
 }
 .rights p{
    font-style: italic;
 }
-.socialMedia a{
+/*.socialMedia a{
 	font-size: 2em;
 	font-weight: 300;
 	margin-right: 0.5em; 
 	padding: 0.5em;
 }
+*/
