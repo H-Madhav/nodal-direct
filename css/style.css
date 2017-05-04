@@ -459,7 +459,7 @@ header{
 	padding: 1em;
 }
 .points ul{
-   padding: 0;
+   padding: 0 1em;
    margin: 0;
    list-style: circle;
 }
