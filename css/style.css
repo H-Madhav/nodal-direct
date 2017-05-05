@@ -374,10 +374,6 @@ header{
 	width: 100%;
 	height: 100%;
 }
-.siteView hr{
-	border: solid 1px #ddd;
-	width: 80%;
-}
 .appFeatures{
 	display: flex;
 	flex-wrap: wrap;
@@ -700,6 +696,20 @@ textarea:focus {
 	font-size: 1.6em;
 	color: #fff;
 	text-transform: uppercase;
+}
+.futureReady{
+	max-width: 60em;
+	margin: 0 auto;
+	padding: 2em 1em;
+}
+.futureReady img{
+	width: 100%;
+	height: 100%;
+}
+@media only screen and (max-width: 599px){
+	.futureReady{
+		max-width: 30em;
+	}
 }
 
 /*------------------footer-------------------*/
