@@ -1,0 +1,11 @@
+ExpiresActive On
+ExpiresByType ../img/png "access 10 minutes"
+ExpiresByType ../img/jpg "access 10 minutes"
+ExpiresByType ../img/gif "access 10 minutes"
+ExpiresByType ../css/style.css "access 10 minutes"
+ExpiresByType ../js/app.js "access 10 minutes"
+ExpiresByType ../js/dist/wow.min.js "access 10 minutes"
+ExpiresByType ../js/typed.js "access 10 minutes"
+ExpiresByType ../js/dist/js/typed.js "access 10 minutes"
+ExpiresByType analytics.js "access 2 hours"
+ExpiresDefault "access 2 days"
