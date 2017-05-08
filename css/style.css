@@ -438,7 +438,7 @@ header{
 }
 .device{
 	max-width: 50%;
-	margin: 0 auto 2em;
+	margin: 0 auto;
 }
 .device img{
 	width: 100%;
