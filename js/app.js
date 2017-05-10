@@ -43,7 +43,7 @@ $(function(){
    });
    
    $(".element").typed({
-			strings: ["", " Desktop Site + Mobile App = 4 X Direct Inquires &amp; Bookings."],
+			strings: ["Desktop Site = Direct Inquires &amp; Bookings.", " Desktop Site + Mobile App = 4 X Direct Inquires &amp; Bookings."],
 			typeSpeed: 10
 	});
 
