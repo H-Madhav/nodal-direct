@@ -1019,11 +1019,11 @@ textarea:focus {
 
 .bgSlid{
     /* z-index: -2; */
-    box-shadow: 0 50px 80px -40px rgba(0, 0, 0, 0.65), 0 25px 25px -20px rgba(0, 0, 0, 0.69);
+  /*  box-shadow: 0 50px 80px -40px rgba(0, 0, 0, 0.65), 0 25px 25px -20px rgba(0, 0, 0, 0.69);*/
     top: 0;
     margin-left: 2.8%;
     width: 736px;
-    height: 450px;
+    height: 246px;
 }
 
 
@@ -1036,26 +1036,32 @@ textarea:focus {
 
 .bgSlid ul li{
 	position: absolute;
-    width: 638px;
-    margin-top: 23px;
-    height: 420px;
-    margin-left: 65px;
+    width: 90% ! important;
+    margin-top: 10px;
+    height: auto;
+    margin-left: 15px;
     float: left;
+    top: 0;
+    bottom: 0;
+
     background-size: contain ! important;
 	background-repeat:no-repeat ! important;
 }
-
+@media only screen and (min-width: 600px){
+	.bgSlid{
+		height: 540px;
+	}
+}
 .mobileWrapr{
 	position:relative;
-	width: 800px;
-    margin: auto;
+	max-width: 800px;
+    margin: 0 auto;
 }
 
 .tabletpng{
     position: absolute;
     z-index: 1;
-	width:800px;
-    height: 450px;
+	width:100%;
 }
 
 .clear {
