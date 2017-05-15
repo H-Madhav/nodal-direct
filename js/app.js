@@ -46,20 +46,19 @@ $(function(){
 			strings: ["Desktop Site = Direct Inquires &amp; Bookings.", " Desktop Site + Mobile App = 4 X Direct Inquires &amp; Bookings."],
 			typeSpeed: 10
 	});
-
-});
-
+ 
 
   var myIndex = 0;
   carousel();
   var numItems = $('.bgSlid ul li');
   var itemsLnth = $('.bgSlid ul li').length;
-	function carousel() { 
-			$('.bgSlid ul li').slideUp('slow');
-			myIndex++;
-			
-			if (myIndex > itemsLnth) {myIndex = 1}
-			<!-- alert(myIndex-1); -->
-			$('.bgSlid ul li').eq(myIndex-1).slideDown('slow');
-			setTimeout(carousel, 3000);
-		}
+  function carousel() { 
+    $('.bgSlid ul li').slideUp('slow');
+    myIndex++;
+      
+    if (myIndex > itemsLnth) {myIndex = 1}
+    <!-- alert(myIndex-1); -->
+    $('.bgSlid ul li').eq(myIndex-1).slideDown('slow');
+    setTimeout(carousel, 3000);
+  };
+});
