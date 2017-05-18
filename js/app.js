@@ -42,10 +42,10 @@ $(function(){
    	});
    });
    
-   $(".element").typed({
-			strings: ["Desktop Site = Direct Inquires &amp; Bookings.", " Desktop Site + Mobile App = 4 X Direct Inquires &amp; Bookings."],
-			typeSpeed: 10
-	});
+ //   $(".element").typed({
+	// 		strings: ["Desktop Site = Direct Inquires &amp; Bookings.", " Desktop Site + Mobile App = 4 X Direct Inquires &amp; Bookings."],
+	// 		typeSpeed: 10
+	// });
  
 
   var myIndex = 0;
@@ -62,3 +62,19 @@ $(function(){
     setTimeout(carousel, 3000);
   };
 });
+
+
+angular.module("nodal", [])
+.controller('NodalController', NodalController);
+
+function NodalController($timeout){
+   var direct = this;
+   direct.mobileApp = "";
+   direct.factor = "";
+
+   var changeHeading = function(){
+       direct.mobileApp = " + Mobile App ";
+       direct.factor = " 4 x "
+    };
+    $timeout(changeHeading, 3000);
+};
