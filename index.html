@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="nodal">
 <head>
 	<title>Nodal</title>
 	<meta charset="utf-8">
@@ -9,22 +9,25 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    
-      ga('create', 'UA-91448024-1', 'auto');
-      ga('send', 'pageview');
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  </script>
+  ga('create', 'UA-99295418-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2898265.js"></script>
+<!-- End of HubSpot Embed Code -->
 </head>
 <body>
 <header class="sticky">
 	<nav class="navBar">
 	    <div class="navbarHeader">
-	    	<a href="index.html" class="brandName">Nodal</a>
+	    	<a href="index.html" class="brandName">nodal direct</a>
 	    </div>
 		<ul class="navbarLink">
 			<a href="features.html">Features &amp; pricing</a>
@@ -38,9 +41,9 @@
 </header>
 <div id="heroImg">
 	<div class="imgOverlay">
-         <div class="mainHeading">
+         <div class="mainHeading" ng-controller="NodalController as direct">
             <h3>Nodal Direct</h3>
-         	<h1 class="element"></h1>
+         	<h1 class="element animated zoomIn">Desktop Site <span class="mobileApp animated fadeIn ">{{direct.mobileApp}}</span> = <span class="factor animated fadeIn">{{direct.factor}}</span> Direct Enquiry &amp; Bookings.</h1>
          	<div class="forVideo">
          	<iframe id="vp1lp995" title="Video Player" width="350" height="200" frameborder="0" src="https://s3.amazonaws.com/embed.animoto.com/play.html?w=swf/production/vp1&e=1490752065&f=lp995SSSPdjqsETyPHdiLg&d=0&m=p&r=360p+480p+720p&volume=100&start_res=480p&i=m&ct=Demo&cu=http://hawthorntech.com&asset_domain=s3-p.animoto.com&animoto_domain=animoto.com&options=" allowfullscreen></iframe>
          </div>
@@ -50,24 +53,24 @@
 <div class="container">
 	<div class="visionWrapper">
 		<div class="vision">
-			<h2>Integrates with Travel's best companies.Increase your direct inquiries &amp; conversions.</h2>
+			<h2>Built for hotels and service apartments - Increase your direct business</h2>
 			<hr class="seprator">
 	    </div>
 	    <div class="coreFeatures">
 	    	<div class="coreFeature">
 	    	    <h2 class="fontIcon wow bounceInRight"><i class="fa fa-check-circle-o" aria-hidden="true"></i></h2>
 	    		<h2>Future Ready &amp; Easy to Manage</h2>
-	    		<p>Your online presence update regularly like an app!</p>
+	    		<p>Your site updates regularly like an app</p>
 	    	</div>
 	    	<div class="coreFeature">
 	    	    <h2 class="fontIcon wow zoomIn"><i class="fa fa-building-o" aria-hidden="true"></i></h2>
 	    		<h2>Built for Accommodation Businesses</h2>
-	    		<p>Seamless Integration with most Booking Engine.</p>
+	    		<p>Seamless Integration with most Booking Engines</p>
 	    	</div>
 	    	<div class="coreFeature">
 	    	    <h2 class="fontIcon wow bounceInLeft"><i class="fa fa-comments-o" aria-hidden="true"></i></h2>
 	    		<h2>Lead Management &amp; Live Chat</h2>
-	    		<p>Capture abandoned bookings &amp; answer questions.</p>
+	    		<p>Capture abandond bookings &amp; answer queries</p>
 	    	</div>
 	    </div>
 	</div>
@@ -149,7 +152,7 @@
 	    <h2>Manage your Travel sites and Apps easily</h2>
 	    <hr class="seprator">
 		<div class="awesomeApp">
-			<h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h4>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 			<div class="aboutApp ">
 				<div class="mobileWrapr wow fadeInLeft" data-wow-delay=".5s">
 					<img src="img/Tablet.png" class="tabletpng" alt="mobileApp">
@@ -173,7 +176,7 @@
     	<div class="wrapper">
     		<h2>Awesome apps that offer the best user experiences</h2>
     		<hr class="seprator">
-    		<h4 class="wow bounceInUp">Your mobile site is created automatically from the same CMS. You can choose to edit mobile specific content. The Mobile site works like a "Hybrid App" and has cool features like "Click to Call", Swipe picture gallery, etc</h4>
+    		<p class="wow bounceInUp">Your mobile site is created automatically from the same CMS. You can choose to edit mobile specific content. The Mobile site works like a "Hybrid App" and has cool features like "Click to Call", Swipe picture gallery, etc</p>
     	</div>
     	<div class="viewContainer">
     		<div class="siteView wow bounceInLeft">
@@ -193,7 +196,7 @@
     			<div class="aapFeature">
     			    <h2><i class="fa fa-cog" aria-hidden="true"></i></h2>
     				<h3>Functionality</h3>
-                    <p>Don't frustrate your visitors with poor Functionality</p>
+                    <p>Enhance user experience with improved functionality </p>
     			</div>
     		</div>
     	</div>
@@ -236,7 +239,7 @@
 			<div class="futureReady">
 				<img src="img/hotels-add-mobile-new.png" alt="futureReady">
 			</div>
-			<p>chedule a personalized demo now.</p>
+			<p>Schedule a personalized demo now.</p>
 			<button class="open">Request a Demo</button>
 		</div>
 		 <h2>Our Partners</h2>
@@ -311,7 +314,7 @@
 	<div class="footerContainer">
 		<div class="footerWrapper">
 			<div class="getInTouch">
-			    <h3>Get In Touch</h3>
+			    <h3>contact numbers</h3>
 				<div class="india">
 					<h3>India</h3>
 					<p>+91-9654272007</p>
@@ -320,13 +323,13 @@
 				<div class="australia">
 					<h3>Australia</h3>
 					<p>+ 61-411696780</p>
-					<p>40, Highview Crescent, Macleod, VIC, Australia -3085</p>
 				</div>
 			</div>
             <div class="Community">
             	<!-- <h3>Community</h3> -->
-            	<h3>Monthly Direct Booking &amp; SEO Newsletter</h3>
+            	<h3>Email</h3>
             	<form>
+            	     <p>Direct Bookings &amp; SEO Monthly Newsletter</p>
             		<input type="email" name="subscribe" placeholder="Email">
             		<button type="submit">Subscribe!</button>
             	</form>
@@ -357,6 +360,7 @@
 		</div>
 	</div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script src="js/dist/wow.min.js"></script>
 <script type="text/javascript" src="js/typed.js"></script>
