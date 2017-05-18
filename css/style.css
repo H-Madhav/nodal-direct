@@ -182,7 +182,7 @@ header{
 .mainHeading h3{
 	color: #000;
 	text-transform: uppercase;
-	font-size: 1.2em;
+	font-size: 1.4em;
 	letter-spacing: 0.3em;
 	padding: 1em;
 	font-weight: 400;
@@ -190,6 +190,7 @@ header{
 .mainHeading h1{
 	color: #DF744A;
 	padding-bottom: 1em;
+	font-weight: 400;
 }
 .forVideo{
 	margin: -1em auto 1em;
@@ -249,7 +250,7 @@ header{
 	padding: 2em;
 }
 .coreFeature{
-	max-width: 30em;
+	width: 30em;
 	text-align: center;
 	margin: 2em auto;
 }
@@ -363,12 +364,12 @@ header{
 }
 .mobileAndDesktop .wrapper h2{
 	color: rgb(223, 116, 74);
-	font-weight: 300;
+	font-weight: 400;
 	text-align: center;
 	padding: 1em;
 }
-.mobileAndDesktop .wrapper h4{
-	font-weight: 300;
+.mobileAndDesktop .wrapper p{
+	font-weight: 400;
 	padding: 0em 1em 1em 1em;
 	text-align: center;
 	font-size: 1.8em;
@@ -430,16 +431,16 @@ header{
 	text-align: center;
 	padding: 0em 1em 1em 1em;
 	color: #DF744A;
-	font-weight: 300;
+	font-weight: 400;
 }
 .awesomeApp{
 	max-width: 120em;
 	margin: 0 auto;
 }
-.awesomeApp h4{
+.awesomeApp p{
 	text-align: center;
 	font-size: 1.8em;
-	font-weight: 300;
+	font-weight: 400;
 	margin-bottom: 1em;
 	padding: 1em;
 }
@@ -606,7 +607,7 @@ textarea:focus {
 }
 .funHeading h2{
 	color: #DF744A;
-	font-weight: 300;
+	font-weight: 400;
 	padding-bottom: 1em;
 }
 .funHeading  p{
@@ -658,7 +659,7 @@ textarea:focus {
 	text-align: center;
     padding-bottom: 1em;
     color: #DF744A;
-    font-weight: 300;
+    font-weight: 400;
 }
 .partnerWrapper{
 	max-width: 30em;
@@ -685,7 +686,7 @@ textarea:focus {
 }
 .rUReady h2{
 	padding-bottom: 1em;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .rUReady button{
@@ -759,6 +760,9 @@ textarea:focus {
 	width: 60%;
 	border:solid 1px #888;
 	padding: 0.5em 1em;
+}
+.Community p:first-child{
+	padding-top: 1em;
 }
 .Community button {
 	border: none;
