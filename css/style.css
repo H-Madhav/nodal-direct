@@ -212,6 +212,11 @@ header{
 .demOnImg:hover{
     border: solid 1px #DCB239;
 }
+.mobileApp, .factor{
+	-webkit-animation-duration: 5s;
+  -webkit-animation-delay: 3s;
+  color: #e54a25;
+}
 
 /*----------------------------Hero Img End----------------*/
 /*---------------------------Container-------------------*/
