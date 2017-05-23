@@ -42,9 +42,12 @@ h1{
 }
 h2{
 	font-size: 2.4em;
+	color: #000;
+	font-weight: 400;
 }
 h3{
 	font-size: 2em;
+	color: #000;
 }
 h4{
 	font-size: 1.6em;
@@ -81,9 +84,9 @@ header{
     list-style: none;
     display: inline-block;
     padding:0em 0.5em;
-    font-weight: 400;
+    font-weight: 300;
+    font-size: 1.8em;
     color: #fff;
-    text-transform: uppercase;
     text-decoration: none;
     transition: color 1s;
 }
@@ -97,7 +100,7 @@ header{
 .navbarHeader a{
 	text-decoration: none;
 	font-size: 3em;
-	font-weight: 300;
+	font-weight: bolder;
 	color: #fff;
 	letter-spacing: 0.1em;
 }
@@ -133,7 +136,7 @@ header{
    color: #fff;
    text-decoration: none;
    text-transform: uppercase;
-   background: #DCB239;
+   background: #e54a25;
    padding: 0.5em 1em;
    color: #fff;
    text-decoration: none;
@@ -141,7 +144,7 @@ header{
 }
 .navbarFooter a:hover{
    background: none;
-   border: solid 1px #DCB239;
+   border: solid 1px #e54a25;
 }
 .fixed {
     position: fixed;
@@ -166,7 +169,7 @@ header{
 .imgOverlay{
 	width: 100%;
 	height: 100%;
-	background: rgba(74, 123, 180, 0.4);
+	background: #21bbd1;
 	position: relative;
 	overflow: hidden;
 }
@@ -180,7 +183,7 @@ header{
 	-webkit-animation-duration: 2s;
 }
 .mainHeading h3{
-	color: #000;
+	color: #fff;
 	text-transform: uppercase;
 	font-size: 1.4em;
 	letter-spacing: 0.3em;
@@ -188,7 +191,7 @@ header{
 	font-weight: 400;
 }
 .mainHeading h1{
-	color: #DF744A;
+	color: #fff;
 	padding-bottom: 1em;
 	font-weight: 400;
 }
@@ -215,7 +218,6 @@ header{
 .container{
 	width: 100%;
 	overflow-x: hidden;
-	padding: 1em;
 }
 
 /*--------------------Vision---------------*/
@@ -231,12 +233,12 @@ header{
 }
 
 .vision h2{
-	font-weight: 300;
+	font-weight: 400;
 	text-align: center;
 }
 .seprator{
 	width: 10%;
-	border: solid 1px rgb(223, 116, 74);
+	border: solid 1px #e54a25;
 	margin: 2em auto;
 }
 /*--------------------Vision End---------*/
@@ -257,10 +259,11 @@ header{
 .coreFeature h2{
 	font-weight: 300;
 	padding-bottom: 0.5em;
+	color: #000;
 	transition: color 0.4s;
 }
 .fontIcon{
-	color: rgb(223, 116, 74);
+	color: #e54a25 !important;
 	font-size: 4em;
 	font-weight: 300;
 	-webkit-animation-duration: 2s;
@@ -339,7 +342,7 @@ header{
 }
 .forMore{
     text-decoration: none;
-    background: #DCB239;
+    background: #e54a25;
     padding: 0.2em 1em;
     color: #fff;
     font-size: 1.2em;
@@ -363,7 +366,6 @@ header{
 	margin: 0 auto;
 }
 .mobileAndDesktop .wrapper h2{
-	color: rgb(223, 116, 74);
 	font-weight: 400;
 	text-align: center;
 	padding: 1em;
@@ -380,7 +382,7 @@ header{
 	padding: 1em;
 }
 .siteView{
-	max-width: 60em;
+	max-width: 100%;
 	margin: 6em auto 2em;
 	-webkit-animation-duration: 2s;
 }
@@ -403,7 +405,7 @@ header{
 }
 .aapFeature h2{
 	font-size: 4em;
-	color: rgb(223, 116, 74);
+	color: #e54a25;
 	font-weight: 300;
 }
 .aapFeature h3{
@@ -430,7 +432,6 @@ header{
 .awesomeAppWrapper h2{
 	text-align: center;
 	padding: 0em 1em 1em 1em;
-	color: #DF744A;
 	font-weight: 400;
 }
 .awesomeApp{
@@ -606,7 +607,6 @@ textarea:focus {
     width: 50%;
 }
 .funHeading h2{
-	color: #DF744A;
 	font-weight: 400;
 	padding-bottom: 1em;
 }
@@ -652,13 +652,13 @@ textarea:focus {
 
 .ourPartner{
 	width: 100%;
-	background: #fff;
-	padding: 4em 1em;
+	background: #21bbd1;
+	padding: 4em 0em;
 }
 .ourPartner h2{
 	text-align: center;
     padding-bottom: 1em;
-    color: #DF744A;
+    color: #fff;
     font-weight: 400;
 }
 .partnerWrapper{
@@ -690,7 +690,7 @@ textarea:focus {
 }
 
 .rUReady button{
-	background: rgb(220, 178, 57);
+	background: #e54a25;
 	border: solid 1px #ddd;
 	margin: 1em;
 	padding: 0.5em 2em;
@@ -717,8 +717,11 @@ textarea:focus {
 
 .footerContainer{
 	width: 100%;
-	background: #DFDCE3;
+	background: #20222D;;
 	padding: 2em;
+}
+.footerContainer h3{
+   color: #21bbd1 !important;
 }
 .footerWrapper{
 	max-width: 120em;
@@ -728,12 +731,17 @@ textarea:focus {
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
+.footerContainer p, .footerContainer ul a{
+	color: #fff;
+	font-weight: 300;
+}
 .footerWrapper h2{
 	margin-bottom: 1em;
 	font-weight: 300;
 }
 .getInTouch, .Community, .support{
 	margin: 1em;
+	text-align: left !important;
 }
 .getInTouch h3{
 	font-weight: 300;
@@ -766,7 +774,7 @@ textarea:focus {
 }
 .Community button {
 	border: none;
-	background: rgb(220, 178, 57);
+	background: #e54a25;
 	color: #fff;
 	padding: 0.6em;
 	font-size: 1.6em;
@@ -806,17 +814,12 @@ textarea:focus {
 #heroImg2{
 	width: 100%;
 	height: 50em;
-    background-image: url("../img/billboard_empty_office.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
 }
 .imgOverlay2{
 	width: 100%;
 	height: 100%;
-	background: rgba(74, 123, 180, 0.4);
+	background: #21bbd1;
 	position: relative;
 }
 .mainHeading2{
@@ -831,13 +834,13 @@ textarea:focus {
 .mainHeading2 h3{
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 1.2em;
+	font-size: 1.4em;
 	letter-spacing: 0.3em;
 	padding: 1em;
 	font-weight: 400;
 }
 .mainHeading2 h1{
-	color: #DF744A;
+	color: #fff;
 	padding-bottom: 2em;
 	font-weight: 300;
 }
@@ -849,8 +852,7 @@ textarea:focus {
 .featureContainer h2{
 	text-align: center;
 	margin-bottom: 2em;
-	font-weight: 300;
-	color: #DF744A;
+	font-weight: 400;
 }
 .featureContainer .wrapper{
 	max-width: 120em;
@@ -992,7 +994,7 @@ textarea:focus {
 .cardBody a{
 	display: block;
 	margin: 0 auto;
-	background: #DCB239;;
+	background: #e54a25;
 	color: #fff;
 	padding: 0.5em 1em;
 	text-align: center;
