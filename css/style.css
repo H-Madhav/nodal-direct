@@ -37,11 +37,11 @@ h1,h2,h3,h4,h5,h6{
 	line-height: 1.4;
 }
 h1{
-	font-size: 3em;
+	font-size: 3.5em;
 	font-weight: 300;
 }
 h2{
-	font-size: 2.4em;
+	font-size: 2.5em;
 	color: #000;
 	font-weight: 400;
 }
@@ -56,11 +56,12 @@ h4{
 header{
 	width: 100%;
 	height: 5em;
+	background: #21bbd1;
 	line-height: 5em;
 	color: #fff;
 	opacity: 1;
-	position: absolute;
-	top: 5%;
+	position: fixed;
+	top: 0;
 	left: 0;
 	z-index: 999;
 	transition: top 0.4s background 0.4s;
@@ -75,15 +76,16 @@ header{
 }
 .navbarLink{
 	margin: 0;
-	padding: 0;
-	width: 60%;
+	padding: 0 2em;
+	width: 65%;
 	height: 100%;
+	text-align: right;
 }
 
 .navbarLink a{
     list-style: none;
     display: inline-block;
-    padding:0em 0.5em;
+    padding:0em 0.8em;
     font-weight: 300;
     font-size: 1.8em;
     color: #fff;
@@ -94,8 +96,9 @@ header{
 	color: #DF744A; 
 }
 .navbarHeader{
-	width: 20%;
-	text-align: center;
+	width: 30%;
+	text-align: left;
+	padding-left: 2em;
 }
 .navbarHeader a{
 	text-decoration: none;
@@ -104,67 +107,39 @@ header{
 	color: #fff;
 	letter-spacing: 0.1em;
 }
-.navbarFooter{
-	width: 20%;
-	text-align: center;
-}
-@media only screen and (max-width: 900px){
-    header{
-    	height: auto;
-    	line-height: 3em;
-    	padding: 1em 0em;
-    }
-    .navbarLink{
-    	width: 100%;
-    	text-align: center;
-    }
-    .navbarHeader{
-    	width: 100%;
-    	text-align: center;
-    }
-   .navbarFooter{
-	   	width: 100%;
-	    text-align: center;
-   } 
-   .navbarLink a{
-   	    padding: 1em 0.3em;
-   }
-
-}
-.navbarFooter a{
+.navbarLink a:last-child{
    font-size: 1.6em;
    color: #fff;
    text-decoration: none;
-   text-transform: uppercase;
    background: #e54a25;
-   padding: 0.5em 1em;
    color: #fff;
+   border-radius: 5px;
    text-decoration: none;
    transition: all 0.4s;
 }
-.navbarFooter a:hover{
-   background: none;
-   border: solid 1px #e54a25;
+.openIcon{
+	width: 5%;
+	text-align: center;
+	display: none;
+	margin-right: 2em;
+	margin-top: 0.8em;
+}
+.openIcon i{
+	font-size: 3em;
+	cursor: pointer;
 }
 .fixed {
     position: fixed;
     top:0; left:0;
     width: 100%; 
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.8);
 }
 
 /*-------------------------Header End----------------------*/
 /*-------------------------Hero Img------------------------*/
 #heroImg{
 	width: 100%;
-	height: 65em;
-/*     background-image: url("../img/pexels.jpeg"); */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
-    overflow-x: hidden;
 }
 .imgOverlay{
 	width: 100%;
@@ -176,27 +151,35 @@ header{
 .mainHeading{
     width: 100%;
 	padding: 1em;
-	position: absolute;
-	top: 30%;
-	left: 0;
-	text-align: center;
-	-webkit-animation-duration: 2s;
+	margin-top: 15em;
 }
-.mainHeading h3{
+.placeLeft{
+	width: 50%;
+	margin: 2em auto;
+	float: left;
+}
+.headingContainer{
+	max-width: 45em;
+	margin: 0 auto;
+}
+.forVideo{
+	width: 50%;
+    float: right;
+    margin: 2em auto;
+    position: relative;
+}
+.placeLeft h3{
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 1.4em;
 	letter-spacing: 0.3em;
-	padding: 1em;
+	padding: 1em 0.2em;
 	font-weight: 400;
 }
-.mainHeading h1{
+.placeLeft h1{
 	color: #fff;
 	padding-bottom: 1em;
 	font-weight: 400;
-}
-.forVideo{
-	margin: -1em auto 1em;
 }
 .demOnImg{
 	padding: 1em 3em;
@@ -217,6 +200,31 @@ header{
   -webkit-animation-delay: 3s;
   color: #e54a25;
 }
+
+
+@media only screen and (max-width: 900px){
+    .navbarLink{
+    	display: none;
+    }
+    .openIcon{
+    	display: block;
+    }
+    .placeLeft{
+    	width: 100%;
+    }
+    .headingContainer{
+		max-width: 100%;
+		padding: 2em;
+		text-align: center;
+    }
+    .forVideo{
+    	width: 45em;
+    	float: none;
+    	margin: 2em auto;
+    }
+}
+
+
 
 /*----------------------------Hero Img End----------------*/
 /*---------------------------Container-------------------*/
@@ -262,7 +270,7 @@ header{
 	margin: 2em auto;
 }
 .coreFeature h2{
-	font-weight: 300;
+	font-weight: 400;
 	padding-bottom: 0.5em;
 	color: #000;
 	transition: color 0.4s;
@@ -279,7 +287,7 @@ header{
 
 .featuresWrapper{
 	width: 100%;
-	background: rgb(74, 123, 180);
+	background: #21bbd1;
 }
 .features {
 	max-width: 120em;
@@ -290,7 +298,8 @@ header{
 	text-align: center;
 	padding-bottom: 1em;
 	color: #fff;
-	font-weight: 300;
+	font-weight: 400;
+	font-size: 3.5em;
 }
 .featContainer{
 	width: 100%;
@@ -299,47 +308,44 @@ header{
 	justify-content: space-between;
     -webkit-animation-duration: 2s;
 }
-.type1{
-  background: #E8E8E8;
-}
-.type2{
-  background: #E8E8E8;
-}
-.type3{
-  background: #E8E8E8;
-}
 .card{
-	width: 30em;
-	margin: 2em auto;
+	width: 28em;
+	margin: 3em 0;
 	border-radius: 3px;
-	box-shadow: inset 0px -20px 40px -19px rgba(82, 82, 82, 0.48);
-	transition: box-shadow 0.4s;
-	-webkit-animation-duration: 2s;
-	transition: background-color 0.4s color 0.4s;
 }
-.card:hover {
-	box-shadow: none;
-	background-color: #fff;
-}
-.card:hover .change {
-	color: rgb(74, 123, 180);
-}
-.card:hover .changeThis{
-	color: #4b4b4b;
-}
+
 .iconHolder {
-	width: 30%;
-	margin: 2em auto;
+	width: 7em;
+	height: 7em;
+	padding: 2em;
+	margin: 0 auto 2em;
 	text-align: center;
 	-webkit-animation-duration: 2s;
+	background-color: #1a97a9;
+	border: solid 1px #1a97a9;
+	border-radius: 100%;
+}
+.iconHolder:hover{
+  background-color: #147583;
+  border: solid 1px #147583;
+}
+.iconHolder img{
+	width: 100%;
+	height: 100%;
 }
 .card h3{
-	font-weight: 300;
+	color: #fff;
+	font-weight: 400;
 	padding-left: 0.5em;
 	padding-bottom: 0.5em;
+	text-align: center;
 }
 .card p{
     padding: 0em 0.5em 1em 0.5em;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.4em;
 }
 .wantMore{
    text-align: center;
@@ -424,54 +430,84 @@ header{
 	.siteView{
 		max-width: 30em;
 	}
+	.card{
+		margin: 2em auto;
+	}
 }
 /*------------mobileAndDesktop End----*/
 /*--------------------awesomeApp----------*/
-
 .awesomeAppWrapper{
 	width: 100%;
-	background: #fff;
-	padding: 4em 0;
-	border-bottom: solid 1px #ddd;
-}
-.awesomeAppWrapper h2{
-	text-align: center;
-	padding: 0em 1em 1em 1em;
-	font-weight: 400;
+	padding: 4em 0em;
 }
 .awesomeApp{
 	max-width: 120em;
 	margin: 0 auto;
+	padding: 4em 0em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
-.awesomeApp p{
-	text-align: center;
-	font-size: 1.8em;
-	font-weight: 400;
-	margin-bottom: 1em;
-	padding: 1em;
+.appLeft{
+	max-width: 45em;
+    max-height: 38em;
+    margin: 2em;
 }
-.aboutApp{
-	padding: 1em;
+.appLeft h2{
+	padding-bottom: 1em;
 }
-.device{
-	max-width: 60em;
-	margin: 0 auto 2em;
+.appLeft p{
+	line-height: 1.8;
 }
-.device img{
+.appRight {
+	max-width: 45em;
+    max-height: 38em;
+    margin: 2em;
+}
+.appRight img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.appRight button{
+	padding: 0.5em;
+	color: #fff;
+	background: #e54a25;
+	border:none;
+}
+/*----------------Dashbord-------*/
+.fullDashbordModal{
+	display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: auto;
+    height: 100%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+#fullDashbord{
+	max-width: 80%;
+	height: 80%;
+	margin: 15% auto;
+	position: relative;
+}
+#fullDashbord img{
 	width: 100%;
 	height: 100%;
 }
-.points{
-	padding: 1em;
-}
-.points ul{
-   padding: 0 1em;
-   margin: 0;
-   list-style: circle;
-}
-.points ul li{
-	padding-bottom: 0.5em;
-	font-weight: 300;
+#fullDashbord button{
+    padding: 0.5em 1em;
+    background-color: #e54a25;
+    color: #fff;
+    font-size: 1.6em;
+    cursor: pointer;
+    border:none;
+    text-align: right;
+    position: absolute;
+    right: 1%;
+    top: 1%;
 }
 /* ----------------Modal-------------- */
 
@@ -628,7 +664,7 @@ textarea:focus {
 	margin: 1em auto;
 }
 .functionCard{
-	width: 10em;
+	width: 9em;
 	height: 10em;
 	margin: 1em;
 	display: inline-block;
@@ -880,7 +916,7 @@ textarea:focus {
 }
 .progress{
 	width: 100%;
-	background: linear-gradient(0deg, #21abc7, #616db3);
+	background: #21bbd1;
 	padding: 7em 0;
 }
 .progress h2{
@@ -907,7 +943,7 @@ textarea:focus {
 	box-shadow: 5px 5px 5px #333;
 	-webkit-transition: box-shadow 0.4s;
 	transition: box-shadow 0.4s;
-	border-top: solid 2px rgb(40, 180, 115);
+	border-top: solid 2px #e54a25;;
 	margin: 2em auto;
 }
 .progressCard:hover{
@@ -919,12 +955,12 @@ textarea:focus {
 	line-height: 5em;
 	text-align: center;
 	border-radius: 100%;
-	background: #ddd;
+	background: #e54a25;
 	border:solid 1px #ddd;
 	margin: -2.5em auto 1em;
 }
 .bumber span{
-    color: rgb(40, 180, 115);
+    color: #fff;
     font-size: 1.5em;
 }
 
@@ -960,7 +996,7 @@ textarea:focus {
 }
 .cardHead{
 	width: 100%;
-	background: linear-gradient(0deg, #21abc7, #616db3);
+	background: #21bbd1;
 	text-align: center;
 	padding: 1em;
 	color: #fff;
@@ -968,15 +1004,20 @@ textarea:focus {
 .cardHead h2{
 	font-weight: 300;
 	padding: 0.5em 0em;
+	color: #fff;
 }
 .cardHead h3{
 	font-weight: 300;
 	padding: 0.5em 0em;
+	color: #e54a25;
 }
 .cardHead h3 span{
 	font-weight: 300;
 	font-size: 2em;
 	padding-left: 0.2em;
+}
+.cardHead p{
+	color: #fff;
 }
 
 .cardBody{
@@ -1081,3 +1122,73 @@ textarea:focus {
     display: table;
 }
 /*-----------------------End-------------------------*/
+
+
+/*--------------About.html------------*/
+.heroImg3{
+	width: 100%;
+	height: 20em;
+	position: relative
+}
+.imgOverlay3{ 
+	position: absolute;
+	top: 0;
+	left: 0;
+    width: 100%;
+    height: 100%;
+    background: #21bbd1;
+}
+.mainHeading3 h1{
+	color: #fff;
+}
+.aboutContainer{
+	width: 100%;
+}
+.pdfHolder{
+	max-width: 120em;
+	margin: 0 auto;
+}
+/*----------------Side Nav--------------------------*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 0.2em 1em;
+    text-decoration: none;
+    font-size: 25px;
+    color: #21bbd1;
+    display: block;
+    transition: 0.3s;
+    border-bottom: solid 1px #fff;
+}
+.sidenav a:first-child{
+	border-bottom:none;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
