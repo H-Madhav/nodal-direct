@@ -4,6 +4,7 @@
 	<title>nodal.direct</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="google-site-verification" content="HCN_enCu98oo-4C6PFMtLWmVHFcbac2ImvDkzTXPfRU" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
@@ -27,25 +28,34 @@
 <header class="sticky">
 	<nav class="navBar">
 	    <div class="navbarHeader">
-	    	<a href="index.html" class="brandName">nodal direct</a>
+	    	<a href="index.html" class="brandName">nodal.direct</a>
 	    </div>
 		<ul class="navbarLink">
 			<a href="features.html">Features &amp; pricing</a>
 		    <a href="">Templates</a>
 		    <a href="https://www.youtube.com/watch?v=qyFou0U3a-U">Videos</a>
+		    <a href="javascript:void(0)" class="open">Request Demo</a>
 		</ul>
-		<div class="navbarFooter">
-			<a href="javascript:void(0)" class="open">request demo</a>
-		</div>
+		<div class="openIcon" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></div>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="features.html">Features &amp; pricing</a>
+			<a href="">Templates</a>
+			<a href="https://www.youtube.com/watch?v=qyFou0U3a-U">Videos</a>
+		    <a href="javascript:void(0)" class="open">Request Demo</a>
+        </div>
 	</nav>
 </header>
 <div id="heroImg">
 	<div class="imgOverlay">
          <div class="mainHeading" ng-controller="NodalController as direct">
-            <h3>Nodal Direct</h3>
-         	<h1 class="element animated zoomIn">Desktop Site <span class="mobileApp animated fadeIn ">{{direct.mobileApp}}</span> = <span class="factor animated fadeIn">{{direct.factor}}</span> Direct Enquiry &amp; Bookings.</h1>
+            <div class="placeLeft">
+         	   <div class="headingContainer">
+         	   	 <h1 class="element animated zoomIn">Desktop Site <span class="mobileApp animated fadeIn ">{{direct.mobileApp}}</span> = <span class="factor animated fadeIn">{{direct.factor}}</span> Direct Enquiry &amp; Bookings.</h1>
+         	   </div>
+            </div>
          	<div class="forVideo">
-         	<iframe id="vp1lp995" title="Video Player" width="350" height="200" frameborder="0" src="https://s3.amazonaws.com/embed.animoto.com/play.html?w=swf/production/vp1&e=1490752065&f=lp995SSSPdjqsETyPHdiLg&d=0&m=p&r=360p+480p+720p&volume=100&start_res=480p&i=m&ct=Demo&cu=http://hawthorntech.com&asset_domain=s3-p.animoto.com&animoto_domain=animoto.com&options=" allowfullscreen></iframe>
+         	<iframe id="vp1lp995" title="Video Player" width="400" height="300" frameborder="0" src="https://s3.amazonaws.com/embed.animoto.com/play.html?w=swf/production/vp1&e=1490752065&f=lp995SSSPdjqsETyPHdiLg&d=0&m=p&r=360p+480p+720p&volume=100&start_res=480p&i=m&ct=Demo&cu=http://hawthorntech.com&asset_domain=s3-p.animoto.com&animoto_domain=animoto.com&options=" allowfullscreen></iframe>
          </div>
          </div>
 	</div>
@@ -146,27 +156,66 @@
 		</div>
 	</div>
 	<div class="awesomeAppWrapper">
-	    <h2>Powerful Dashboard - Your Website and App from one backend</h2>
 		<div class="awesomeApp">
-			<p>We spend 25% of our focus on SEO R&amp;D - nodal.direct has inbuilt SEO tools like Moz. In addition, nodal.direct will alert you if some of your pages are not in line with latest SEO rules!</p>
-			<div class="aboutApp ">
-				<div class="mobileWrapr wow fadeInLeft" data-wow-delay=".5s">
-					<img src="img/Tablet.png" class="tabletpng" alt="mobileApp">
-					<div class="bgSlid">
-						<ul>
-							<li style="background:url(img/screen1.PNG);">
-							</li>
-							<li style="background:url(img/screen2.PNG);">
-							</li>
-							<li style="background:url(img/screen3.PNG);">
-							</li>
-						</ul>
-					</div> 
-				</div>				
-			</div>
+		    <div class="appLeft">
+		    	<h2>Powerful Dashboard - Your Website and App from one backend</h2>
+			    <p>We spend 25% of our focus on SEO R&amp;D - nodal.direct has inbuilt SEO tools like Moz. In addition, nodal.direct will alert you if some of your pages are not in line with latest SEO rules!</p>
+		    </div>
+		    <div class="appRight">
+		    	<img src="images/dash1.jpg" alt="dashbord1">
+		    	<button onclick="showDashbord()">View full Dashbord</button>
+		    </div>
+		</div>
+        <div class="awesomeApp">
+            <div class="appRight">
+		    	<img src="images/dash2.jpg" alt="dashbord1">
+		    	
+		    </div>
+		    <div class="appLeft">
+		    	<h2>Powerful Dashboard - Your Website and App from one backend</h2>
+			    <p>We spend 25% of our focus on SEO R&amp;D - nodal.direct has inbuilt SEO tools like Moz. In addition, nodal.direct will alert you if some of your pages are not in line with latest SEO rules!</p>
+		    </div>
+		</div>
+		<div class="awesomeApp">
+		    <div class="appLeft">
+		    	<h2>Powerful Dashboard - Your Website and App from one backend</h2>
+			    <p>We spend 25% of our focus on SEO R&amp;D - nodal.direct has inbuilt SEO tools like Moz. In addition, nodal.direct will alert you if some of your pages are not in line with latest SEO rules!</p>
+		    </div>
+		    <div class="appRight">
+		    	<img src="images/dash1.jpg" alt="dashbord1">
+		    </div>
 		</div>
 	</div>
-
+    <div class="fullDashbordModal" id="dashbordModal">
+	    <div id="fullDashbord">
+	    	<button onclick="hideDashbord()">&times;</button>
+	    	<div>
+	    		<img src="images/dash1.jpg" alt="dashbord1">
+	    	</div>
+	    </div>
+    </div>
+    	<div class="ourPartner">
+		<div class="rUReady wow fadeInLeft">
+			<h2>Google for Hotels is changing - Are you future ready?</h2>
+			<div class="futureReady">
+				<img src="img/hotels-add-mobile-new.png" alt="futureReady">
+			</div>
+			<p>Schedule a personalized demo now.</p>
+			<button class="open">Request a Demo</button>
+		</div>
+		 <h2>Our Partners</h2>
+		<div class="partnerWrapper wow fadeInDown">
+			<div class="partner">
+				<img src="img/HotellogixLOGO.png" alt="Hotellogix">
+			</div>
+			<div class="partner">
+				<img src="img/innkeypmslogo.png" alt="innkeypms">
+			</div>
+			<div class="partner">
+				<img src="img/res_logo.gif" alt="res">
+			</div>
+		</div> 
+	</div>
 
     <div class="mobileAndDesktop">
     	<div class="wrapper">
@@ -225,29 +274,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<div class="ourPartner">
-		<div class="rUReady wow fadeInLeft">
-			<h2>Google for Hotels is changing - Are you future ready?</h2>
-			<div class="futureReady">
-				<img src="img/hotels-add-mobile-new.png" alt="futureReady">
-			</div>
-			<p>Schedule a personalized demo now.</p>
-			<button class="open">Request a Demo</button>
-		</div>
-		 <h2>Our Partners</h2>
-		<div class="partnerWrapper wow fadeInDown">
-			<div class="partner">
-				<img src="img/HotellogixLOGO.png" alt="Hotellogix">
-			</div>
-			<div class="partner">
-				<img src="img/innkeypmslogo.png" alt="innkeypms">
-			</div>
-			<div class="partner">
-				<img src="img/res_logo.gif" alt="res">
-			</div>
-		</div> 
 	</div>
 	<div id="nodalModal" class="modal">
 		<div class="modalContent">
@@ -357,7 +383,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script src="js/dist/wow.min.js"></script>
-<script type="text/javascript" src="js/typed.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
