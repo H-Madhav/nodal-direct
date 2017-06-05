@@ -1,4 +1,19 @@
 ;new WOW().init();
+function openNav() {
+    document.getElementById("mySidenav").style.width = "320px";
+};
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+};
+
+function hideDashbord(){
+  document.getElementById('dashbordModal').style.display = "none";
+};
+
+function showDashbord(){
+  document.getElementById('dashbordModal').style.display = "block";
+};
 
 $(function(){
     var animation1 = "animated bounce";
