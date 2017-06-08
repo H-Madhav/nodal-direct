@@ -28,15 +28,6 @@ $(function(){
     	$(this).removeClass(animation1);
     }); 
 
-	var stickyOffset = $('.sticky').offset().top;
-	$(window).scroll(function(){
-	  var sticky = $('.sticky'),
-	      scroll = $(window).scrollTop();
-
-	  if (scroll >= stickyOffset) sticky.addClass('fixed');
-	  else sticky.removeClass('fixed');
-    });
-
     var modal = $('#nodalModal');
     var openBtn = $('.open');
     var close = $('.close');
