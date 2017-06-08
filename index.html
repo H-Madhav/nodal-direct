@@ -48,18 +48,19 @@
 </header>
 <div id="heroImg">
 	<div class="imgOverlay">
-         <div class="mainHeading" ng-controller="NodalController as direct">
-            <div class="placeLeft">
-         	   <div class="headingContainer">
-         	   	 <h1 class="element animated zoomIn">Desktop Site <span class="mobileApp animated fadeIn ">{{direct.mobileApp}}</span> = <span class="factor animated fadeIn">{{direct.factor}}</span> Direct Enquiry &amp; Bookings.</h1>
-         	   </div>
-            </div>
-         	<div class="forVideo">
-         	<iframe id="vp1lp995" title="Video Player" width="400" height="380" frameborder="0" src="https://s3.amazonaws.com/embed.animoto.com/play.html?w=swf/production/vp1&e=1490752065&f=lp995SSSPdjqsETyPHdiLg&d=0&m=p&r=360p+480p+720p&volume=100&start_res=480p&i=m&ct=Demo&cu=http://hawthorntech.com&asset_domain=s3-p.animoto.com&animoto_domain=animoto.com&options=" allowfullscreen></iframe>
-         </div>
-         </div>
-	</div>
+        <div class="forVideo">
+	        <div class="videoWrapper">
+	         	<iframe width="560" height="349" src="https://www.youtube-nocookie.com/embed/uG5Y-kUjxYw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	        </div>
+        </div>
+        <div class="placeLeft" ng-controller="NodalController as direct">
+     	    <div class="headingContainer">
+         	   	<h1 class="element animated zoomIn">Desktop Site <span class="mobileApp animated fadeIn ">{{direct.mobileApp}}</span> = <span class="factor animated fadeIn">{{direct.factor}}</span> Direct Enquiry &amp; Bookings.</h1>
+         	</div>
+        </div>
+    </div>
 </div>
+
 <div class="container">
 	<div class="visionWrapper"><div class="vision">
 			<h2>Built for Hotels &amp; Service Apartments - Boost direct bookings &amp; inquiries</h2>
@@ -93,13 +94,6 @@
 					</div>
 					<h3 class="change">Highly Visual Backend</h3>
 					<p class="changeThis">No tech experience required to manage your hotel site</p>
-				</div>
-				<div class="card type1 wow zoomIn">
-					<div class="iconHolder">
-						<img src="img/icon-move-management.png" alt="move-management">
-					</div>
-					<h3 class="change">Transition Management</h3>
-					<p class="changeThis">Move your website with its current look &amp; feel</p>
 				</div>
 				<div class="card type1 wow zoomIn">
 					<div class="iconHolder">
@@ -162,13 +156,13 @@
 			    <p>We spend 25% of our focus on SEO R&amp;D - nodal.direct has inbuilt SEO tools like Moz. In addition, nodal.direct will alert you if some of your pages are not in line with latest SEO rules!</p>
 		    </div>
 		    <div class="appRight">
-		    	<img src="img/dash1.jpg" alt="dashbord1">
+		    	<img src="images/dash1.jpg" alt="dashbord1">
 		    	<button onclick="showDashbord()">View full Dashbord</button>
 		    </div>
 		</div>
         <div class="awesomeApp">
             <div class="appRight">
-		    	<img src="img/dash2.jpg" alt="dashbord1">
+		    	<img src="images/dash2.jpg" alt="dashbord1">
 		    	
 		    </div>
 		    <div class="appLeft">
@@ -182,7 +176,7 @@
 			    <p>We spend 25% of our focus on SEO R&amp;D - nodal.direct has inbuilt SEO tools like Moz. In addition, nodal.direct will alert you if some of your pages are not in line with latest SEO rules!</p>
 		    </div>
 		    <div class="appRight">
-		    	<img src="img/dash1.jpg" alt="dashbord1">
+		    	<img src="images/dash1.jpg" alt="dashbord1">
 		    </div>
 		</div>
 	</div>
@@ -190,7 +184,7 @@
 	    <div id="fullDashbord">
 	    	<button onclick="hideDashbord()">&times;</button>
 	    	<div>
-	    		<img src="img/dash1.jpg" alt="dashbord1">
+	    		<img src="images/dash1.jpg" alt="dashbord1">
 	    	</div>
 	    </div>
     </div>
