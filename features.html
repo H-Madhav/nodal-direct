@@ -4,6 +4,7 @@
   <title>Nodal</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="HCN_enCu98oo-4C6PFMtLWmVHFcbac2ImvDkzTXPfRU" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
@@ -25,18 +26,24 @@
 <header class="sticky">
   <nav class="navBar">
       <div class="navbarHeader">
-        <a href="index.html" class="brandName">nodal direct</a>
+        <a href="index.html" class="brandName">nodal.direct</a>
       </div>
     <ul class="navbarLink">
-        <a href="features.html">Features &amp; pricing</a>
+      <a href="features.html">Features &amp; pricing</a>
         <a href="">Templates</a>
-        <a href="">youtube</a>
+        <a href="https://www.youtube.com/watch?v=qyFou0U3a-U">Videos</a>
+        <a href="javascript:void(0)" class="open">Request Demo</a>
     </ul>
-    <div class="navbarFooter">
-      <a href="javascript:void(0)" class="open">request demo</a>
-    </div>
+    <div class="openIcon" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="features.html">Features &amp; pricing</a>
+      <a href="">Templates</a>
+      <a href="https://www.youtube.com/watch?v=qyFou0U3a-U">Videos</a>
+        <a href="javascript:void(0)" class="open">Request Demo</a>
+        </div>
   </nav>
-</header> 
+</header>
 <div id="heroImg2">
   <div class="imgOverlay2">
          <div class="mainHeading2">
@@ -120,9 +127,9 @@
                </div>
                <div class="pricingCard">
                    <section class="cardHead">
-                       <h2>Single Property</h2>
+                       <h2>Per Property</h2>
                        <hr>
-                       <h3>INR<span>3000</span></h3>
+                       <h3>INR<span>3000 /</span><i class="fa fa-usd" aria-hidden="true"></i><span>62</span>AUD</h3>
                        <p>per month</p>
                    </section>
                    <div class="cardBody">
