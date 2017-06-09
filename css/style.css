@@ -1175,33 +1175,7 @@ textarea:focus {
     content: "";
     display: table;
 }
-/*-----------------------End-------------------------*/
 
-
-/*--------------About.html------------*/
-.heroImg3{
-	width: 100%;
-	height: 20em;
-	position: relative
-}
-.imgOverlay3{ 
-	position: absolute;
-	top: 0;
-	left: 0;
-    width: 100%;
-    height: 100%;
-    background: #21bbd1;
-}
-.mainHeading3 h1{
-	color: #fff;
-}
-.aboutContainer{
-	width: 100%;
-}
-.pdfHolder{
-	max-width: 120em;
-	margin: 0 auto;
-}
 /*----------------Side Nav--------------------------*/
 
 .sidenav {
@@ -1245,4 +1219,95 @@ textarea:focus {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+/*-------------Template page---------------*/
+
+#templateHead {
+	width: 100%;
+	height: 30em;
+	margin: 6em 0em 0em;
+	background: #21bbd1;
+	position: relative;
+}
+.templateImg {
+	width: 100%;
+	height: 100%;
+}
+
+.templateHeading {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    text-align: center;
+}
+.templateHeading h3 {
+	color: #fff;
+	font-weight: 400;
+}
+
+.templateHeading h1{
+   color: #fff;
+   font-weight: 400;
+}
+
+#selectTemplate{
+   width: 100%;
+   background: #fff;
+}
+.templateOption{
+	max-width: 120em;
+	margin: 0 auto;
+}
+.optionContainer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 90em;
+	margin: 4em auto;
+	text-align: center;
+}
+.optionContainer img{
+	display: block;
+	margin: 0 auto;
+}
+.singleProp, .multiProp {
+	max-width: 40em;
+	padding: 2em 1em;
+	margin: 2em auto;
+	border: solid 1px #ddd;
+	box-shadow: 0px 15px 15px -15px #333;
+	border-radius: 5px;
+}
+.singleProp h2, .multiProp h2 {
+	padding: 1em 0em 0.5em;
+}
+.singleAnc, .multiAnc {
+	text-decoration: none;
+	width: 10em;
+	display: block;
+	font-size: 1.6em;
+	background: #e54a25;
+	color: #fff;
+	padding: 0.5em 1em;
+	margin: 1em auto;
+	text-transform: uppercase;
+	position: relative;
+}
+.span1, .span2{
+	position: absolute;
+	left: 0;
+	top: 20%;
+	opacity: 0;
+	transition: all 0.4s;
+}
+
+.singleAnc:hover .span1{
+    left: 90%;
+    opacity: 1;
+}
+.multiAnc:hover .span2{
+    left: 90%;
+    opacity: 1;
 }
